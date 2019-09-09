@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='styles.css' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 id='title'>Philosophy Survey</h1>
+            <h2 id='description'>What do you believe? What do you know?</h2>
+            <h3>What is belief? What is knowledge?</h3>
+            <h4>Who is the you that believes and knows?</h4>
+        </header>
+        <form id='survey-form' action='/submit-survey-info'>
+
+            <ul class="flex-outer">
+
+                <li>
+                    <label for='name'>Name:</label> 
+                    <input type='text' name='name' placeholder='  Name' required>
+                </li>
+
+                <li>
+                    <label for='email'>Email:</label> 
+                    <input type='email' name='email' placeholder='  Email' required>
+                </li>
+
+                <li>
+                    <label for='year of birth'>Year of Birth</label> 
+                    <input type='number' min='1900' max='2030' name='year of birth' placeholder='Year of birth' required>
+                </li>
+
+                <li>
+                    <label for='desire-choice'>What is your greatest desire?</label>
+                    <select id='desire-choice' name='desire-choice' class='dropdown'>
+                        <option disabled selected value>Select an option</option>
+                        <option>money</option>
+                        <option>fame</option>
+                        <option>love</option>
+                        <option>time</option>
+                        <option>power</option>
+                        <option>death</option>
+                        <option>fun</option>
+                        <option>beauty</option>
+                    </select>
+                </li>
+
+                <li>
+                    <p>
+                        To what extent do you agree with the statement that
+                        <em>"it is better to sacrifice one life in order to save ten lives."</em>
+                    </p>
+                    <ul style='list-style: none;'>
+                        <li class='radio-button'><label>totally agree<input name='radio-buttons' value='2' type='radio'></label></li>
+                        <li class='radio-button'><label>somewhat agree<input name='radio-buttons' value='2' type='radio'></label></li>
+                        <li class='radio-button'><label>disagree<input name='radio-buttons' value='2' type='radio'></label></li>
+                        <li class='radio-button'><label>the question should be framed differently<input name='radio-buttons' value='2' type='radio'></label></li>
+                        <li class='radio-button'><label>none of the above<input name='radio-buttons' value='2' type='radio'></label></li>                
+                    </ul>
+                </li>
+
+                <li>
+                    <label for='input2'>Briefly explain your reasoning.</label> 
+                    <textarea type='text' maxlength='800' rows='2' name='input2' placeholder=' Enter your response' required></textarea>
+                </li>
+
+                <li>
+                    <p for='objective'>What is humanity's objective? (Check all that apply)</p>
+                    <ul class='flex-inner' style='list-style: none;'>
+                        <li class='checkbox-li'>
+                                <input name='objective' value='1' type='checkbox' id='check-exploration'>
+                                <label for='check-exploration'>Exploration</label>
+                        </li>
+                        <li class='checkbox-li'>
+                                <input name='objective' value='2' type='checkbox' id='check-universal-harmony'>
+                                <label for='check-universal-harmony'>Universal Harmony</label>
+                        </li>
+                        <li class='checkbox-li'>
+                                <input name='objective' value='3' type='checkbox' id='check-liberation'>
+                                <label for='check-liberation'>Liberation</label>
+                        </li>
+                        <li class='checkbox-li'>
+                                <input name='objective' value='4' type='checkbox' id='check-pleasure'>
+                                <label for='check-pleasure'>Pleasure</label>
+                        </li>
+                        <li class='checkbox-li'>
+                                <input name='objective' value='5' type='checkbox' id='check-learning'>
+                                <label for='check-learning'>Learning</label>
+                        </li>
+                        <li class='checkbox-li'>
+                                <input name='objective' value='6' type='checkbox' id='check-understanding-god'>
+                                <label for='check-understanding-god'>Understanding God</label>
+                        </li>
+                        <li class='checkbox-li'>
+                                <input name='objective' value='7' type='checkbox' id='check-transcending-matter'>
+                                <label for='check-transcending-matter'>Transcending Matter</label>
+                        </li>
+                        <li class='checkbox-li'>
+                                <input name='objective' value='8' type='checkbox' id='check-universal-conquest'>
+                                <label for='check-universal-conquest'>Universal Conquest</label>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <label for='input3'>Briefly explain your reasoning.</label> 
+                    <textarea type='text' maxlength='800' rows='2' name='input3' placeholder=' Enter your response' required></textarea>
+                </li>
+                <li>
+                    <button type='submit'>Submit</button>
+                </li>
+
+            </ul>
+
+            
+            
+
+
+        </form>
+    </body>
+</html>
